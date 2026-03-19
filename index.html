@@ -59,17 +59,17 @@
       max-width: 45vw;
     }
 
-    .hero {
-      background: linear-gradient(90deg, #f1f1f1 0%, #ececec 50%, #e9e9e9 100%);
-      border-radius: 22px;
-      min-height: 690px;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      align-items: center;
-      overflow: hidden;
-      padding: 48px 52px;
-      gap: 20px;
-    }
+   .hero {
+  background: linear-gradient(90deg, #f1f1f1 0%, #ececec 50%, #e9e9e9 100%);
+  border-radius: 22px;
+  min-height: 690px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 48px 52px 0;
+  gap: 20px;
+}
 
     .hero-copy {
       max-width: 760px;
@@ -121,11 +121,12 @@
     }
 
     .hero-visual {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100%;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100%;
+  height: 100%;
+}
 
     .phone-image {
       width: 100%;
@@ -226,8 +227,12 @@
       }
 
       .phone-image {
-        max-width: 420px;
-      }
+  width: 100%;
+  max-width: 520px;
+  object-fit: contain;
+  display: block;
+  align-self: flex-end;
+}
     }
 
     @media (max-width: 860px) {
