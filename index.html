@@ -6,7 +6,7 @@
   <title>Orderly</title>
   <meta
     name="description"
-    content="Orderly is coming. Be the first to know when we launch."
+    content="Orderly is coming. Launching soon."
   />
   <link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon" />
 
@@ -59,86 +59,65 @@
       max-width: 45vw;
     }
 
-  .hero {
-  position: relative;
-  background: linear-gradient(90deg, #f1f1f1 0%, #ececec 50%, #e9e9e9 100%);
-  border-radius: 22px;
-  min-height: 690px;
-  overflow: hidden;
-  padding: 48px 420px 0 52px;
-}
+    .hero {
+      position: relative;
+      background: linear-gradient(90deg, #f1f1f1 0%, #ececec 50%, #e9e9e9 100%);
+      border-radius: 22px;
+      min-height: 690px;
+      overflow: hidden;
+      padding: 56px 460px 0 52px;
+    }
 
-.hero-copy {
-  max-width: 100%;
-  position: relative;
-  z-index: 2;
-  padding-bottom: 40px;
-}
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      max-width: 100%;
+      padding-bottom: 36px;
+    }
 
     .hero h1 {
       margin: 0 0 28px;
-      font-size: 66px;
+      max-width: 680px;
+      font-size: 58px;
       line-height: 1.05;
       font-weight: 700;
       letter-spacing: -1px;
     }
 
     .hero .subtext {
-      margin: 0 0 30px;
-      font-size: 34px;
+      margin: 0 0 24px;
+      max-width: 680px;
+      font-size: 30px;
       line-height: 1.18;
       color: #5b5b5b;
-      max-width: 760px;
     }
 
     .hero .cta-label {
-      margin: 0 0 18px;
-      font-size: 28px;
+      margin: 0;
+      font-size: 24px;
       line-height: 1.2;
       color: #5a5a5a;
     }
 
-    .signup-row {
+    .hero-visual {
+      position: absolute;
+      right: 28px;
+      bottom: 0;
+      width: 390px;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .phone-image {
       width: 100%;
-      max-width: 780px;
+      max-width: 390px;
+      height: auto;
+      display: block;
+      margin-bottom: -6px;
     }
-
-    .signup-input {
-      width: 100%;
-      height: 78px;
-      border: 0;
-      border-radius: 4px;
-      background: #ffffff;
-      padding: 0 22px;
-      font-size: 24px;
-      color: #222222;
-      outline: none;
-      box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
-    }
-
-    .signup-input::placeholder {
-      color: #8c8c8c;
-    }
-
- .hero-visual {
-  position: absolute;
-  right: 24px;
-  bottom: 0;
-  width: 360px;
-  height: calc(100% - 20px);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-   .phone-image {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  display: block;
-       margin-bottom: -8px;
-
-}
 
     .section-title {
       text-align: center;
@@ -204,86 +183,45 @@
       font-size: 18px;
     }
 
-   @media (max-width: 1200px) {
-  .hero {
-    display: block;
-    padding: 40px 30px 0;
-    min-height: auto;
-  }
+    @media (max-width: 1200px) {
+      .hero {
+        min-height: auto;
+        padding: 40px 30px 0;
+      }
 
-  .hero-copy {
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 54px;
-  }
-
-  .hero .subtext {
-  margin: 0 0 30px;
-  font-size: 34px;
-  line-height: 1.18;
-  color: #5b5b5b;
-  max-width: 620px;
-}
-
-  .hero .cta-label {
-    font-size: 24px;
-  }
-
-  .hero-visual {
-  position: absolute;
-  right: 24px;
-  bottom: 0;
-  width: 360px;
-  height: calc(100% - 20px);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-  .phone-image {
-    max-width: 420px;
-  }
-}
       .hero-copy {
-  max-width: 100%;
-  position: relative;
-  z-index: 2;
-  padding-bottom: 40px;
-}
+        max-width: 100%;
+        padding-bottom: 0;
+      }
 
       .hero h1 {
-        font-size: 54px;
+        max-width: 100%;
+        font-size: 48px;
       }
 
       .hero .subtext {
-        font-size: 28px;
         max-width: 100%;
+        font-size: 26px;
+        margin-bottom: 18px;
       }
 
       .hero .cta-label {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 24px;
       }
 
       .hero-visual {
-  position: absolute;
-  right: 24px;
-  bottom: 0;
-  width: 360px;
-  height: calc(100% - 20px);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
+        position: static;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: flex-end;
+      }
 
       .phone-image {
-  width: 100%;
-  max-width: 520px;
-  object-fit: contain;
-  display: block;
-  align-self: flex-end;
-}
+        max-width: 360px;
+        margin: 10px auto 0;
+      }
     }
 
     @media (max-width: 860px) {
@@ -292,27 +230,27 @@
       }
 
       .hero {
-        padding: 28px 20px;
+        padding: 28px 20px 0;
         border-radius: 18px;
       }
 
       .hero h1 {
-        font-size: 42px;
-        margin-bottom: 18px;
+        font-size: 40px;
+        margin-bottom: 16px;
       }
 
       .hero .subtext {
-        font-size: 24px;
-        margin-bottom: 32px;
+        font-size: 22px;
+        margin-bottom: 16px;
       }
 
       .hero .cta-label {
-        font-size: 22px;
+        font-size: 20px;
+        margin-bottom: 18px;
       }
 
-      .signup-input {
-        height: 64px;
-        font-size: 20px;
+      .phone-image {
+        max-width: 300px;
       }
 
       .section-title {
@@ -364,9 +302,7 @@
           Way You Manage Your Life.
         </p>
 
-        <p class="cta-label">
-  Launching Soon.
-</p>
+        <p class="cta-label">Launching Soon.</p>
       </div>
 
       <div class="hero-visual">
