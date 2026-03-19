@@ -1,5 +1,4 @@
 
-
 **Github**: https://github.com/PaulleDemon/awesome-landing-pages
 
 ## Usage
@@ -27,6 +26,3 @@ To create a build file use
 ```html
 npm run build:tailwind
 ```
-
-
-https://www.figma.com/community/file/1065510379888107603/saas-dashboard
