@@ -4,19 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orderly</title>
-  <meta
-    name="description"
-    content="Orderly is coming."
-  />
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon.png">
+
+  <meta name="description" content="Orderly is coming." />
+
+  <!-- 🚫 STOP INDEXING -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon.png">
   <link rel="apple-touch-icon" href="./assets/logo/favicon.png">
+
+  <!-- Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+
+  <!-- Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
@@ -109,26 +117,25 @@
     }
 
     .hero-visual {
-  position: absolute;
-  right: 34px;
-  bottom: 0;
-  width: 420px;   /* slightly bigger container */
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  overflow: hidden; /* key */
-}
+      position: absolute;
+      right: 34px;
+      bottom: 0;
+      width: 420px;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-.phone-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: bottom; /* 🔥 forces it to sit on bottom */
-}
-.phone-image {
-  transform: translateY(6px);
-}
+    .phone-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+      transform: translateY(6px);
+    }
+
     .section-title {
       margin: 86px 0 56px;
       text-align: center;
@@ -165,17 +172,14 @@
 
     .icon-box i {
       font-size: 84px;
-      line-height: 1;
       color: #000000;
     }
 
     .feature h3 {
       margin: 0 0 10px;
       font-size: 36px;
-      line-height: 1.08;
       font-weight: 800;
       letter-spacing: -0.03em;
-      color: #111111;
     }
 
     .feature p {
@@ -185,7 +189,6 @@
       line-height: 1.22;
       font-weight: 500;
       letter-spacing: -0.015em;
-      color: #222222;
     }
 
     .footer {
@@ -195,20 +198,13 @@
       border-top: 1px solid #d8d8d8;
       text-align: center;
       font-size: 18px;
-      line-height: 1.3;
       font-weight: 600;
-      letter-spacing: -0.01em;
-      color: #222222;
     }
 
     @media (max-width: 1200px) {
-      body {
-        padding: 16px;
-      }
+      body { padding: 16px; }
 
-      .page {
-        padding: 20px 24px 34px;
-      }
+      .page { padding: 20px 24px 34px; }
 
       .hero {
         min-height: auto;
@@ -216,20 +212,12 @@
         display: block;
       }
 
-      .hero h1 {
-        max-width: 100%;
-        font-size: 50px;
-      }
-
-      .hero .subtext {
-        max-width: 100%;
-        font-size: 25px;
-      }
+      .hero h1 { font-size: 50px; }
+      .hero .subtext { font-size: 25px; }
 
       .hero-visual {
         position: static;
         width: 100%;
-        height: auto;
         justify-content: center;
       }
 
@@ -237,49 +225,27 @@
         max-width: 360px;
         margin: 14px auto 0;
       }
-
-      .section-title {
-        font-size: 54px;
-        margin: 76px 0 48px;
-      }
     }
 
     @media (max-width: 860px) {
-      body {
-        padding: 10px;
-      }
+      body { padding: 10px; }
 
       .page {
-        padding: 16px 16px 28px;
+        padding: 16px;
         border-radius: 20px;
-      }
-
-      .topbar {
-        padding: 6px 6px 14px;
-      }
-
-      .logo {
-        width: 150px;
       }
 
       .hero {
         padding: 24px 14px 0;
-        border-radius: 18px;
       }
 
       .hero h1 {
-        margin-bottom: 14px;
         font-size: 32px;
-        line-height: 1.04;
-        letter-spacing: -0.03em;
-        max-width: 100%;
+        margin-bottom: 14px;
       }
 
       .hero .subtext {
-        max-width: 100%;
         font-size: 18px;
-        line-height: 1.24;
-        letter-spacing: -0.015em;
       }
 
       .desktop-break {
@@ -289,38 +255,6 @@
       .phone-image {
         max-width: 300px;
         margin: 18px auto 0;
-      }
-
-      .section-title {
-        font-size: 42px;
-        margin: 64px 0 38px;
-      }
-
-      .features {
-        grid-template-columns: 1fr;
-        gap: 42px;
-      }
-
-      .icon-box {
-        width: 170px;
-        height: 170px;
-      }
-
-      .icon-box i {
-        font-size: 68px;
-      }
-
-      .feature h3 {
-        font-size: 30px;
-      }
-
-      .feature p {
-        font-size: 20px;
-      }
-
-      .footer {
-        margin-top: 60px;
-        font-size: 16px;
       }
     }
   </style>
@@ -352,36 +286,23 @@
 
     <section>
       <h2 class="section-title">How It Works</h2>
-
       <div class="features">
         <div class="feature">
-          <div class="icon-box">
-            <i class="bi bi-lock"></i>
-          </div>
+          <div class="icon-box"><i class="bi bi-lock"></i></div>
           <h3>Private</h3>
-          <p>
-            Built With Security At Its Core. Your Information Is Yours.
-          </p>
+          <p>Built With Security At Its Core. Your Information Is Yours.</p>
         </div>
 
         <div class="feature">
-          <div class="icon-box">
-            <i class="bi bi-file-earmark-check"></i>
-          </div>
+          <div class="icon-box"><i class="bi bi-file-earmark-check"></i></div>
           <h3>Organised</h3>
-          <p>
-            No More Searching. No More Guessing. Everything Where It Should Be.
-          </p>
+          <p>No More Searching. No More Guessing. Everything Where It Should Be.</p>
         </div>
 
         <div class="feature">
-          <div class="icon-box">
-            <i class="bi bi-hand-index-thumb"></i>
-          </div>
+          <div class="icon-box"><i class="bi bi-hand-index-thumb"></i></div>
           <h3>Ready</h3>
-          <p>
-            For You, And For The People Who Will Need It One Day.
-          </p>
+          <p>For You, And For The People Who Will Need It One Day.</p>
         </div>
       </div>
     </section>
