@@ -16,7 +16,11 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <style>
     * {
       box-sizing: border-box;
@@ -26,19 +30,14 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
       background: #f3f3f3;
       color: #111111;
+      font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
     }
 
     img {
       max-width: 100%;
       display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
     }
 
     .page {
@@ -51,7 +50,7 @@
     .topbar {
       display: flex;
       align-items: center;
-      padding: 6px 10px 18px;
+      padding: 8px 12px 18px;
     }
 
     .logo {
@@ -61,13 +60,13 @@
 
     .hero {
       position: relative;
-      background: linear-gradient(90deg, #f4f4f4 0%, #ededed 100%);
-      border-radius: 22px;
-      min-height: 520px;
-      overflow: hidden;
-      padding: 0 460px 0 52px;
       display: flex;
       align-items: center;
+      min-height: 520px;
+      overflow: hidden;
+      border-radius: 22px;
+      background: linear-gradient(90deg, #f4f4f4 0%, #ededed 100%);
+      padding: 0 470px 0 54px;
     }
 
     .hero-copy {
@@ -76,36 +75,31 @@
       max-width: 100%;
     }
 
-   .hero h1 {
-  margin: 0 0 20px;
-  max-width: 640px;
-  font-size: 56px;
-  line-height: 1.05;
-  font-weight: 800;
-  letter-spacing: -1.5px;
-  font-family: 'Nunito Sans', Arial, sans-serif;
-}
-
-    .hero .subtext {
-      margin: 0 0 20px;
-      max-width: 640px;
-      font-size: 28px;
-      line-height: 1.3;
-      color: #5b5b5b;
+    .hero h1 {
+      margin: 0 0 22px;
+      max-width: 660px;
+      font-size: 60px;
+      line-height: 1.02;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #111111;
     }
 
-    .hero .cta-label {
+    .hero .subtext {
       margin: 0;
-      font-size: 22px;
-      line-height: 1.2;
-      color: #5a5a5a;
+      max-width: 760px;
+      font-size: 29px;
+      line-height: 1.22;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #5e5e5e;
     }
 
     .hero-visual {
       position: absolute;
-      right: 32px;
+      right: 34px;
       bottom: 0;
-      width: 360px;
+      width: 370px;
       height: 100%;
       display: flex;
       align-items: flex-end;
@@ -115,19 +109,19 @@
 
     .phone-image {
       width: 100%;
-      max-width: 360px;
+      max-width: 370px;
       height: auto;
-      display: block;
       margin-bottom: -10px;
     }
 
     .section-title {
+      margin: 86px 0 56px;
       text-align: center;
-      font-size: 64px;
-      line-height: 1.08;
-      margin: 100px 0 60px;
-      font-weight: 700;
-      letter-spacing: -1px;
+      font-size: 66px;
+      line-height: 1.02;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #111111;
     }
 
     .features {
@@ -146,7 +140,7 @@
     .icon-box {
       width: 210px;
       height: 210px;
-      margin: 0 auto 28px;
+      margin: 0 auto 26px;
       border-radius: 16px;
       background: linear-gradient(135deg, #f2f2f2 0%, #ebebeb 100%);
       display: flex;
@@ -161,56 +155,52 @@
     }
 
     .feature h3 {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       font-size: 36px;
-      line-height: 1.1;
-      font-weight: 700;
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #111111;
     }
 
     .feature p {
       margin: 0 auto;
-      max-width: 300px;
+      max-width: 320px;
       font-size: 22px;
-      line-height: 1.25;
+      line-height: 1.22;
+      font-weight: 500;
+      letter-spacing: -0.015em;
       color: #222222;
     }
 
     .footer {
-      margin: 78px auto 0;
       max-width: 1120px;
+      margin: 78px auto 0;
+      padding: 28px 20px 10px;
       border-top: 1px solid #d8d8d8;
       text-align: center;
-      padding: 28px 20px 10px;
-      color: #222222;
       font-size: 18px;
+      line-height: 1.3;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #222222;
     }
 
     @media (max-width: 1200px) {
       .hero {
         min-height: auto;
-        padding: 40px 30px 0;
+        padding: 44px 30px 0;
         display: block;
-      }
-
-      .hero-copy {
-        max-width: 100%;
-        padding-bottom: 0;
       }
 
       .hero h1 {
         max-width: 100%;
-        font-size: 48px;
+        font-size: 50px;
       }
 
       .hero .subtext {
         max-width: 100%;
-        font-size: 26px;
-        margin-bottom: 18px;
-      }
-
-      .hero .cta-label {
-        font-size: 22px;
-        margin-bottom: 24px;
+        font-size: 25px;
       }
 
       .hero-visual {
@@ -218,12 +208,16 @@
         width: 100%;
         height: auto;
         justify-content: center;
-        align-items: flex-end;
       }
 
       .phone-image {
         max-width: 360px;
-        margin: 10px auto 0;
+        margin: 14px auto 0;
+      }
+
+      .section-title {
+        font-size: 54px;
+        margin: 76px 0 48px;
       }
     }
 
@@ -232,24 +226,26 @@
         padding: 14px 6px 30px;
       }
 
+      .topbar {
+        padding: 8px 10px 16px;
+      }
+
+      .logo {
+        width: 150px;
+      }
+
       .hero {
         padding: 28px 20px 0;
         border-radius: 18px;
       }
 
       .hero h1 {
-        font-size: 40px;
         margin-bottom: 16px;
+        font-size: 40px;
       }
 
       .hero .subtext {
-        font-size: 22px;
-        margin-bottom: 16px;
-      }
-
-      .hero .cta-label {
-        font-size: 20px;
-        margin-bottom: 18px;
+        font-size: 21px;
       }
 
       .phone-image {
@@ -258,7 +254,7 @@
 
       .section-title {
         font-size: 42px;
-        margin: 70px 0 40px;
+        margin: 64px 0 38px;
       }
 
       .features {
@@ -304,7 +300,6 @@
           We're putting the finishing touches on something<br>
           that will change the way you manage your life.
         </p>
-
       </div>
 
       <div class="hero-visual">
